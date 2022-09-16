@@ -26,3 +26,17 @@ function computerTurn(){
            break;     
     }
 }
+function checkWinner(){
+    if(player == computer){
+        return "Drow !"
+    } 
+    else if(computer == "rock"){
+        return(player == "paper") ? "you win !" : "you lose"
+    }
+    else if(computer == "sci"){
+        return(player == "rock") ? "you win !" : "you lose"
+    }
+    else if(computer == "paper"){
+        return(player == "sci") ? "you win !" : "you lose"
+    }
+ }
