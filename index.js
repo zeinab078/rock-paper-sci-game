@@ -12,3 +12,17 @@ choiceBtn.forEach(button=> button.addEventListener("click",()=>{
     computerText.textContent=`computer : ${computer}`
     resultText.textContent=checkWinner()
 }))
+function computerTurn(){
+    let randNum=Math.floor(Math.random() * 3) +1;
+    switch (randNum){
+       case 1 :
+           computer ="rock"
+           break;
+       case 2 :
+           computer="paper"
+           break;
+       case 3 :
+           computer="sci"   
+           break;     
+    }
+}
